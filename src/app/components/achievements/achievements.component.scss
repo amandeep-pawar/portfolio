@@ -1,0 +1,38 @@
+.alt-bg {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.achievements-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.achievement-card {
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.issuer {
+  font-size: 0.82rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 2px 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
